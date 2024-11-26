@@ -1,0 +1,172 @@
+<!-- Unit 5 Project0
+Requirements
+[  ] <div> and <span>
+[  ] height: and width:
+[  ] margin: and padding: 
+[  ] Three Images
+
+Select ONE Additional Feature to Add  
+[ no ] Feature 1 - Flexbox
+[ no ] Feature 2 - Flip Card
+[ no ] Feature 3 - Navbar
+[ no ] Feature 4 - Shaking Animation
+[ no ] Feature 5 - Gradient Background
+[ no ] Feature 6 - Spotify Playlist
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Unit 5 Project</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <style>
+      body {
+        background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0fc9ded4-899e-408f-8b33-c893599d0397/ddygpmy-2560773a-aac5-4a56-a132-976334019b30.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzBmYzlkZWQ0LTg5OWUtNDA4Zi04YjMzLWM4OTM1OTlkMDM5N1wvZGR5Z3BteS0yNTYwNzczYS1hYWM1LTRhNTYtYTEzMi05NzYzMzQwMTliMzAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Ot2VHZsB7Q-jcUTGXHzGfo9Dz-ePFoIjjFhxp__i8-I");
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .topnav {
+        overflow: hidden;
+        background-color: #eb78af;
+      }
+
+      .topnav a {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        font-family: "DynaPuff", system-ui;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+      }
+
+      .topnav a:hover {
+        background-color: #f3b7d9;
+        color: #d95579;
+      }
+
+      .topnav a.active {
+        background-color: #eb78af;
+        color: white;
+        font-family: "DynaPuff", system-ui;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+      }
+
+      .topnav a.active:hover {
+        background-color: #f3b7d9;
+        color: #d95579;
+      }
+
+      .profile {
+        border-radius: 10px;
+        border: 5px solid #eb78af;
+      }
+
+      .profile:hover {
+        transform: scale(
+          1.1
+        ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      }
+
+      .profile-container {
+        display: flex;
+        height: 300px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 40px;
+      }
+      
+  
+
+      #click {
+        text-align: center;
+        font-family: "DynaPuff", system-ui;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        color: #eb78af;
+        font-size: 20px;
+      }
+
+      .text {
+        text-align: center;
+        font-family: "DynaPuff", system-ui;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        color: #d95579;
+        font-size: 30px;
+      }
+      
+      
+    </style>
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="index.html">Home</a>
+      <a href="characters.html">Characters</a>
+      <a href="series.html">Series</a>
+      <a href="locations.html">Locations</a>
+      <a href="other.html">Other</a>
+    </div>
+    <h2 class="text">Transformations</h2>
+    <div class="profile-container">
+      <img
+        class="profile"
+        src="https://media4.giphy.com/media/vhSBz8urLPSNlQpTiv/giphy.gif?cid=6c09b952evw7eclfj3bq4sssins3pfww417p66axadcsi40b&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g"
+        width="400"
+      />
+
+      <img
+        class="profile"
+        src="https://media4.giphy.com/media/gvTITk4aovjVP6gUt6/giphy.gif?cid=6c09b952z01150ghpo88of4a5vj6xx7p1ay09u9z1cncd5yz&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g"
+        width="400"
+      />
+
+      <img
+        class="profile"
+        src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcG1tbmc2am1zejAzMWY1aHg2NGxmM25kYnFqY24ya2h6M2hsaXQ5YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/avuBzCBIMRq1kKMgp8/giphy.webp"
+        width="400"
+      />
+
+      <img
+        class="profile"
+        src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3FodTEzMjZmdThpNXM0NzdhdnJlcjE0a2liczhhbGo4OGpmbHJsNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fEWvNJWXoaOLtvY6RH/giphy.webp"
+        width="400"
+      />
+
+      <img
+        class="profile"
+        src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGMyeTJmMnJnenl4Zndodmh6bW1odm96cTNtMXZoNnBlenRiZGJ5dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WPDONTfuoJDVE5z7Ht/giphy.webp"
+        width="400"
+      />
+
+      <img
+        class="profile"
+        src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnA5OWd4cngweW4wM20zNnE5cnU3djdrb2Z4dG9sZjJzYXQ2czR0ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pxYwCGM8iZeZB6UmFt/giphy.webp"
+        width="400"
+      />
+    </div>
+
+ 
+    </div>
+  </body>
+</html>
