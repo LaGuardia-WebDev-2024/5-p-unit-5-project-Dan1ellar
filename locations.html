@@ -1,0 +1,357 @@
+<!-- Unit 5 Project0
+Requirements
+[  ] <div> and <span>
+[  ] height: and width:
+[  ] margin: and padding: 
+[  ] Three Images
+
+Select ONE Additional Feature to Add  
+[ no ] Feature 1 - Flexbox
+[ no ] Feature 2 - Flip Card
+[ no ] Feature 3 - Navbar
+[ no ] Feature 4 - Shaking Animation
+[ no ] Feature 5 - Gradient Background
+[ no ] Feature 6 - Spotify Playlist
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Unit 5 Project</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <style>
+      body {
+        background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0fc9ded4-899e-408f-8b33-c893599d0397/ddygpmy-2560773a-aac5-4a56-a132-976334019b30.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzBmYzlkZWQ0LTg5OWUtNDA4Zi04YjMzLWM4OTM1OTlkMDM5N1wvZGR5Z3BteS0yNTYwNzczYS1hYWM1LTRhNTYtYTEzMi05NzYzMzQwMTliMzAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Ot2VHZsB7Q-jcUTGXHzGfo9Dz-ePFoIjjFhxp__i8-I");
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .topnav {
+        overflow: hidden;
+        background-color: #eb78af;
+      }
+
+      .topnav a {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        font-family: "DynaPuff", system-ui;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+      }
+
+      .topnav a:hover {
+        background-color: #f3b7d9;
+        color: #d95579;
+      }
+
+      .topnav a.active {
+        background-color: #eb78af;
+        color: white;
+        font-family: "DynaPuff", system-ui;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+      }
+
+      .topnav a.active:hover {
+        background-color: #f3b7d9;
+        color: #d95579;
+      }
+
+      .text {
+        text-align: center;
+        font-family: "DynaPuff", system-ui;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        color: #d95579;
+        font-size: 30px;
+      }
+
+      .profile {
+        border-radius: 10px;
+        border: 5px solid #eb78af;
+      }
+
+      .profile:hover {
+        transform: scale(
+          1.1
+        ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      }
+
+      .info-item:hover {
+        transform: scale(
+          1.1
+        ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      }
+
+      .domino-item:hover {
+        transform: scale(
+          1.1
+        ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      }
+
+      .info-container {
+        display: flex;
+        height: 300px;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .info-item {
+        background-color: aliceblue;
+        width: 600px;
+        border-radius: 10px;
+        border: 5px solid #eb78af;
+        font-family: "DynaPuff", system-ui;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        color: #d95579;
+        font-size: 15px;
+        margin-top: 50px;
+      }
+
+      .domino-item {
+        background-color: aliceblue;
+        width: 550px;
+        border-radius: 10px;
+        border: 5px solid #eb78af;
+        font-family: "DynaPuff", system-ui;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        color: #d95579;
+        font-size: 15px;
+        margin-top: 50px;
+      }
+
+ 
+    
+      .ps {
+        text-align: center;
+        display: flex;
+        font-family: "DynaPuff", system-ui;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        color: #d95579;
+        font-size: 15px;
+        margin-top: 100px;
+        background-color: #f3b7d9;
+        border-radius: 10px;
+        border: 3px solid #eb78af;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="index.html">Home</a>
+      <a href="characters.html">Characters</a>
+      <a href="series.html">Series</a>
+      <a href="locations.html">Locations</a>
+      <a href="other.html">Other</a>
+    </div>
+
+    <h2 class="text">Alfea</h2>
+
+    <div class="info-container">
+      <img
+        class="info-item"
+        src="https://cdn.glitch.global/b84470c1-493b-41a2-82c6-a710848c3e0f/902dcfa5-61ef-465c-a64f-417c6c6c1a5b.image.png?v=1732250551091"
+        width="600"
+      />
+    </div>
+
+    <p class="ps">
+      The Alfea College for Fairies is a girls' boarding school in Magix for
+      Fairies and the most prestigious educational institution for fairies.<br /><br />
+
+      Alfea is an ancient school for fairies, and apparently the only one
+      dedicated to fairy education only. The Alfea students are mostly in
+      training ages 16-18 (unless they have been held back a grade like Stella,
+      so in her case, 17). Fairies here learn how to control their power, fight
+      evil, learn new spells as well as be guardians of their planets, or in
+      many cases, learn how to be their realms' queens. In Season 4, it is here
+      that the Winx, after graduating, taught for a short period of time.
+      <br />
+    </p>
+
+    <h2 class="text">Cloud Tower</h2>
+
+    <div class="info-container">
+      <img
+        class="info-item"
+        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/64b64a42-4a17-48e4-b0cc-65ae348dafc2/d938s64-760a30d2-33e8-4b8a-b4d0-edd7accc16d5.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY0YjY0YTQyLTRhMTctNDhlNC1iMGNjLTY1YWUzNDhkYWZjMlwvZDkzOHM2NC03NjBhMzBkMi0zM2U4LTRiOGEtYjRkMC1lZGQ3YWNjYzE2ZDUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.BpZG0Xp9OYNVcMgywnhgaqrxwJkpbdDpalG4QRK3gGo"
+        width="600"
+      />
+    </div>
+
+    <p class="ps">
+      At Cloud Tower, witches learn about witchcraft.
+      It is the magical competitor and rival of Alfea. Its headmistress is
+      Griffin.<br /><br />
+
+      The castle itself is a huge and vast living organism with a heart that had
+      been created in ancient times by powerful witches. The moats of Cloud
+      Tower are its roots and the towers its branches, and a magical energy
+      circulates through the school in a way similar to blood flow.<br /><br />
+
+      Cloud Tower is hard to enter, as there is a defense field surrounding it.
+      There are ways of getting past this defense, however: tunnels that connect
+      the schools, ways to get past the field itself, and one may enter if
+      invited. Along with that, the tower can be manipulated like a high tech
+      confusion device by the one who is able to control it. This twists the
+      building into forming new corridors or passages to confuse all those
+      inside.<br /><br />
+
+      Alfea is an ancient school for fairies, and apparently the only one
+      dedicated to fairy education only. The Alfea students are mostly in
+      training ages 16-18 (unless they have been held back a grade like Stella,
+      so in her case, 17). Fairies here learn how to control their power, fight
+      evil, learn new spells as well as be guardians of their planets, or in
+      many cases, learn how to be their realms' queens. In Season 4, it is here
+      that the Winx, after graduating, taught for a short period of time.
+    </p>
+
+    <h2 class="text">Domino</h2>
+
+    <div class="info-container">
+      <img
+        class="domino-item"
+        src="https://www.winxclub.com/sites/default/files/galleria/immagine-corpo-1_39.jpg"
+        width="600"
+      />
+    </div>
+
+    <p class="ps">
+      Domino is a vibrant realm that was created by the Great Dragon and chosen
+      to be its resting place once it had completed creating the rest of the the
+      Magic Dimension. Since then, the Dragon has entrusted a spark of its
+      miraculous flame to the realm's royal family, where it had been passed
+      down through generations from heir to heir. It is also thanks to the Flame
+      that Domino's monarchy has seemingly maintained high importance when
+      compared to those of other realms. Issue 149 of the Winx Club Comic
+      Series, also shows that the realm is also either the home or starting
+      point of the Guardian Nymphs and even holds a chamber dedicated to each
+      nymph that has graced its history; further adding onto just how important
+      the realm is concerning the Magic Dimension's safety and magical
+      balance.<br /><br />
+
+      As of Season 6, it is revealed that a chamber had been built around the
+      Great Dragon to better contain it. The chamber was also used as training
+      grounds to test Keepers of the Dragon Flame, until inside it the Dragon
+      having turned into one with up to five heads, became too volatile to
+      safely train with.<br /><br />
+
+      Additionally, Domino is also shown to contain up to five moons or
+      satellite asteroids.[1]
+      <br />
+    </p>
+
+    <h2 class="text">Andros</h2>
+
+    <div class="info-container">
+      <img
+        class="info-item"
+        src="https://cdn.glitch.global/b84470c1-493b-41a2-82c6-a710848c3e0f/5559597c-abd1-4784-a77d-a08168582510.image.png?v=1732288631752"
+        width="600"
+      />
+    </div>
+
+    <p class="ps">
+      Andros is a planet predominantly covered in water (90% according to the
+      official website) with a few jungle islands that include the island that
+      houses the Omega Portal, Black Island and the Islands of Nadur, Nantros
+      and Guanaco. Many of these islands seem to be volcanic as Black Island, as
+      its name would entail, is covered by volcanic ash, and the Island of
+      Nantros contains a volcano itself. Pirates also encircle these islands,
+      making a few of them into their bases to operate illegally while evading
+      arrest from Andros' royal guards. Abandoned ruins of ancient buildings
+      also rest both above and below the ocean waves which were never
+      explained.<br /><br />
+
+      In the comic issue Nex's Test, it is revealed that Andros was not always
+      predominantly covered in water. In fact, it used to be the exact opposite
+      sometime during its expansive history, during which half-women,
+      half-serpentine beings called the Melusina roamed the realm in place of
+      the merfolk, who they were at war with. It is unknown what caused the
+      sudden shift in the realm's geography but, as Andros' landmasses shrunk in
+      response to the oceans expanding, the Melusina began going extinct as due
+      to their weakness towards water. As the Melusina were dying out, the
+      merfolk thrived in place of them until one Melusina was left living alone
+      on an island by Season 6. After the events of Nex's Test, the Melusina
+      have become fully extinct
+      <br />
+    </p>
+
+    <h2 class="text">Red Fountain</h2>
+
+    <div class="info-container">
+      <img
+        class="info-item"
+        src="https://cdn.glitch.global/b84470c1-493b-41a2-82c6-a710848c3e0f/92f04095-c638-494d-acdd-70fee9e0a1b4.image.png?v=1732288787474"
+        width="600"
+      />
+    </div>
+
+    <p class="ps">
+      Red Fountain is a paramilitary boarding school for Specialists, and the
+      most prestigious educational institution for Specialists. It is located in
+      Magix across Lake Roccaluce from both Cloud Tower and Alfea and appears to
+      be a very prestigious school.<br /><br />
+
+      Red Fountain is charged with the defense of the Realm of Magix and it was
+      called the "Fortress of the Magic Dimension" by Codatorta.
+      <br /><br />
+      In the first season of Winx Club, it was also said to be a school for
+      Wizards but the only residents of Red Fountain who have ever been seen
+      using magic are the Headmaster Saladin, and Athena, the Guardian Pixie of
+      the school's fragment of the Codex. However, in "Secrets Within Secrets",
+      it was seen that the Specialists could control the dragons of Red Fountain
+      through a magic or telepathic bond.
+
+      <br />
+    </p>
+
+    <h2 class="text">Melody</h2>
+
+    <div class="info-container">
+      <img
+        class="info-item"
+        src="https://cdn.glitch.global/b84470c1-493b-41a2-82c6-a710848c3e0f/c053e0d1-d7f0-4ca3-a735-755af350ca4c.image.png?v=1732288882092"
+        width="600"
+      />
+    </div>
+
+    <p class="ps">
+      Melody is the realm of music, for which many of the inhabitants are
+      naturally inclined toward more than other people in the entire Magic
+      Dimension.<br /><br />
+      Melody is full of mountains that are surrounded by forests with reddish
+      leaf trees. There is an ocean near Musa's home, in which there exists the
+      Ocean Gate linking Melody to Andros that is guarded by a Selkie named
+      Sonna, as well as the Ruby Reef, which is filled with beautiful corals and
+      a giant enchanted harp created from those corals that allow it to make
+      beautiful music upon being played.
+    </p>
+  </body>
+</html>

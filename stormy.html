@@ -1,14 +1,14 @@
 <!-- Unit 5 Project0
 Requirements
-[ ✔ ] <div> and <span>
-[ ✔ ] height: and width:
-[✔] margin: and padding: 
-[ ✔ ] Three Images
+[  ] <div> and <span>
+[  ] height: and width:
+[  ] margin: and padding: 
+[  ] Three Images
 
 Select ONE Additional Feature to Add  
-[ ✔ ] Feature 1 - Flexbox
+[ no ] Feature 1 - Flexbox
 [ no ] Feature 2 - Flip Card
-[ ✔ ] Feature 3 - Navbar
+[ no ] Feature 3 - Navbar
 [ no ] Feature 4 - Shaking Animation
 [ no ] Feature 5 - Gradient Background
 [ no ] Feature 6 - Spotify Playlist
@@ -70,6 +70,24 @@ Select ONE Additional Feature to Add
         background-color: #f3b7d9;
         color: #d95579;
       }
+
+      .outfits {
+        border-radius: 20px;
+        border: 5px solid #eb78af;
+      }
+
+      .outfit-container {
+        display: flex;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+      }
+
+      .layout {
+        border-radius: 20px;
+        border: 5px solid #eb78af;
+      }
     </style>
   </head>
   <body>
@@ -78,7 +96,7 @@ Select ONE Additional Feature to Add
       <a href="characters.html">Characters</a>
       <a href="series.html">Series</a>
       <a href="locations.html">Locations</a>
-         <a href="other.html">Other</a>
+      <a href="other.html">Other</a>
     </div>
 
     <br />
@@ -86,11 +104,58 @@ Select ONE Additional Feature to Add
     <br />
     <div style="text-align: center">
       <img
-        id="logo"
-        src="https://cdn.glitch.global/b84470c1-493b-41a2-82c6-a710848c3e0f/IMG_1548.png?v=1732136474345"
-        alt="Winx"
-        width="900"
+        class="layout"
+        src="https://cdn.glitch.global/b84470c1-493b-41a2-82c6-a710848c3e0f/9c9512e7-0671-4432-a92f-da796eaaf19d.image.jpeg?v=1732231920878"
+        width="880"
       />
     </div>
+    <br />
+    <br />
+    <br />
+    <div style="text-align: center">
+      <img
+        class="layout"
+        src="https://vignette1.wikia.nocookie.net/winxclub/images/b/b2/Stormy_Staffel_6_01.png/revision/latest?cb=20160402183831&path-prefix=de"
+        width="880"
+      />
+    </div>
+    <br />
+    <br />
+    <br />
+    <div style="text-align: center">
+      <img
+        class="layout"
+        src="https://i.pinimg.com/originals/62/39/f4/6239f411484a99eef11aa3569b3f279f.jpg"
+        width="880"
+      />
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="outfit-container">
+      <img
+        class="outfits"
+        src="https://d2bzx2vuetkzse.cloudfront.net/fit-in/0x450/unshoppable_producs/ec6db672-d916-46f9-a97c-628b34712649.jpeg"
+        width="380"
+      />
+
+      <img
+        class="outfits"
+        src="https://i.pinimg.com/736x/3d/23/0f/3d230fab0b0e0b22b67ce22e05971019--trix-winx-club.jpg"
+        width="280"
+      />
+    </div>
+    <br />
+    <br />
   </body>
 </html>

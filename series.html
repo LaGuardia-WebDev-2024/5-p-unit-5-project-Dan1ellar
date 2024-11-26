@@ -1,0 +1,281 @@
+<!-- Unit 5 Project0
+Requirements
+[  ] <div> and <span>
+[  ] height: and width:
+[  ] margin: and padding: 
+[  ] Three Images
+
+Select ONE Additional Feature to Add  
+[ no ] Feature 1 - Flexbox
+[ no ] Feature 2 - Flip Card
+[ no ] Feature 3 - Navbar
+[ no ] Feature 4 - Shaking Animation
+[ no ] Feature 5 - Gradient Background
+[ no ] Feature 6 - Spotify Playlist
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Unit 5 Project</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <style>
+      body {
+        background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0fc9ded4-899e-408f-8b33-c893599d0397/ddygpmy-2560773a-aac5-4a56-a132-976334019b30.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzBmYzlkZWQ0LTg5OWUtNDA4Zi04YjMzLWM4OTM1OTlkMDM5N1wvZGR5Z3BteS0yNTYwNzczYS1hYWM1LTRhNTYtYTEzMi05NzYzMzQwMTliMzAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Ot2VHZsB7Q-jcUTGXHzGfo9Dz-ePFoIjjFhxp__i8-I");
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .topnav {
+        overflow: hidden;
+        background-color: #eb78af;
+      }
+
+      .topnav a {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        font-family: "DynaPuff", system-ui;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+      }
+
+      .topnav a:hover {
+        background-color: #f3b7d9;
+        color: #d95579;
+      }
+
+      .topnav a.active {
+        background-color: #eb78af;
+        color: white;
+        font-family: "DynaPuff", system-ui;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        text-align: center;
+      }
+
+      .topnav a.active:hover {
+        background-color: #f3b7d9;
+        color: #d95579;
+      }
+
+      .text {
+        text-align: center;
+        font-family: "DynaPuff", system-ui;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        color: #d95579;
+        font-size: 30px;
+      }
+
+      .WoW {
+        text-align: center;
+        font-family: "DynaPuff", system-ui;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        color: #d95579;
+        font-size: 30px;
+        margin-top: -120px;
+      }
+
+      .fate {
+        text-align: center;
+        font-family: "DynaPuff", system-ui;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        color: #d95579;
+        font-size: 30px;
+        margin-top: -90px;
+      }
+
+      .profile {
+        border-radius: 10px;
+        border: 5px solid #eb78af;
+      }
+
+      #s1 {
+        border-radius: 10px;
+        border: 5px solid #eb78af;
+      }
+
+      .profile:hover {
+        transform: scale(
+          1.1
+        ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      }
+
+      #s1:hover {
+        transform: scale(
+          1.1
+        ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      }
+
+      .other:hover {
+        transform: scale(
+          1.1
+        ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      }
+
+      .profile-container {
+        display: flex;
+        height: 300px;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        flex-wrap: wrap;
+      }
+
+      .other {
+        border-radius: 10px;
+        border: 5px solid #eb78af;
+        margin-top: -150px;
+      }
+
+      .span {
+        text-align: center;
+        font-family: "DynaPuff", system-ui;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        color: #f875aa;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="index.html">Home</a>
+      <a href="characters.html">Characters</a>
+      <a href="series.html">Series</a>
+      <a href="locations.html">Locations</a>
+      <a href="other.html">Other</a>
+    </div>
+
+    <h2 class="text">
+      The Original Winx Club <br />
+      <span class="span"> Seasons 1-8</span>
+    </h2>
+
+    <div class="profile-container">
+      <img
+        id="s1"
+        src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/727a89e03ad9181cb94dfa25bf2655f7a60a876b472c7d9e9a3a54c98f55b71d._RI_V_TTW_.jpg"
+        width="200"
+      />
+      <img
+        class="profile"
+        src="https://images3.alphacoders.com/114/thumb-1920-1148248.jpg"
+        width="200"
+      />
+
+      <img
+        class="profile"
+        src="https://m.media-amazon.com/images/S/pv-target-images/f441e8c72e9311ad4ac66199d401bd48c7a1decc606d00b2d542c330875437d4.jpg"
+        width="200"
+      />
+
+      <img
+        class="profile"
+        src="https://www.bebeblog.it/wp-content/uploads/2015/06/winx-club.jpg"
+        width="190"
+      />
+
+      <img
+        class="profile"
+        src="https://m.media-amazon.com/images/S/pv-target-images/3b5395304ec1b16ed6d41cb8af3ea90951304301b895e0ff00c01dd111c89d4b.jpg"
+        width="200"
+      />
+
+      <img
+        class="profile"
+        src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/c49372a3bce8e89013184222e9906c9da5c236d45c1d9798dea4432c5b092209._RI_TTW_.jpg"
+        width="200"
+      />
+
+      <img
+        class="profile"
+        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/31b59df0-d760-43f5-99cc-f2e65fe897f2/d8xwdd5-0a5fcbd0-0187-423f-bdd8-0134c511dd6f.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzMxYjU5ZGYwLWQ3NjAtNDNmNS05OWNjLWYyZTY1ZmU4OTdmMlwvZDh4d2RkNS0wYTVmY2JkMC0wMTg3LTQyM2YtYmRkOC0wMTM0YzUxMWRkNmYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.34MFItk174vYro6lRwGXFNyzfvdJ-SiSlz5vHAB1WiQ"
+        width="200"
+      />
+      <img
+        class="profile"
+        src="https://vignette.wikia.nocookie.net/winx/images/0/0a/Winx_Club_8_-_Bloom%2C_Stella%2C_and_Flora_New_Transformation_2.jpg/revision/latest?cb=20181015195311"
+        width="200"
+      />
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <h2 class="text">
+      Pop Pixie <br />
+      <span class="span"> One Season</span>
+    </h2>
+
+    <div class="profile-container">
+      <img
+        class="other"
+        src="https://imgcdn.kidoodle.tv/Poppixie/banner_x_large.jpg"
+        width="200"
+      />
+    </div>
+
+    <h2 class="WoW">
+      World of Winx<br />
+      <span class="span"> Seasons 1-2 </span>
+    </h2>
+
+    <div class="profile-container">
+      <img
+        class="other"
+        src="https://cdni.fancaps.net/file/fancaps-tvimages/6037047.jpg"
+        width="250"
+      />
+      <img
+        class="other"
+        src="https://tvcdn.fancaps.net/6070371.jpg"
+        width="250"
+      />
+    </div>
+
+    <h2 class="fate">
+      Fate: The Winx Saga (Live Action) <br />
+      <span class="span"> Seasons 1-2</span>
+    </h2>
+
+    <div class="profile-container">
+      <img
+        class="other"
+        src="https://assets.teenvogue.com/photos/600f35ab24baabce6426da6b/16:9/w_2560%2Cc_limit/V2_FWCS_101_Unit_00512.jpg"
+        width="270"
+      />
+      <img
+        class="other"
+        src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/05/fate-the-winx-saga-featured.jpg"
+        width="300"
+      />
+    </div>
+  </body>
+</html>
